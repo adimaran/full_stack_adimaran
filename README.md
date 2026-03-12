@@ -29,6 +29,24 @@ Collect:
 - Publishable key
 - Service role key
 
+## 0. Repository setup shortcut
+
+Use the setup script to install dependencies and generate local env files when missing:
+
+```bash
+npm run setup
+```
+
+Then edit:
+- `apps/api/.env`
+- `apps/web/.env.local`
+
+Planning reference:
+- `docs/REPOSITORY_PLAN.md`
+
+Beginner-friendly walkthrough:
+- `docs/BEGINNER_SETUP.md`
+
 ## 2. Run database schema
 
 Execute:

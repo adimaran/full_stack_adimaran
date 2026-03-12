@@ -9,7 +9,9 @@
     "dev": "concurrently -n API,WEB \"npm:dev:api\" \"npm:dev:web\"",
     "dev:api": "npm --workspace apps/api run dev",
     "dev:web": "npm --workspace apps/web run dev",
-    "build": "npm --workspace apps/api run build && npm --workspace apps/web run build"
+    "build": "npm --workspace apps/api run build && npm --workspace apps/web run build",
+    "setup": "bash scripts/init-repo.sh",
+    "check": "npm run build"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
