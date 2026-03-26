@@ -151,3 +151,24 @@ Redeploy after setting env vars. Do not add a trailing slash.
 1. Open `https://YOUR-RENDER-API.onrender.com/health` and confirm `{"status":"ok"}`.
 2. Open your Vercel URL and test signup/login.
 3. If browser shows CORS errors, verify `CORS_ORIGINS` exactly matches your Vercel domain.
+
+
+
+$signupBody = @{
+  email = "adityamaran@gmail.com"
+  password = "hydkmp834428"
+} | ConvertTo-Json
+
+$signupResponse = Invoke-RestMethod -Method POST `
+  -Uri "http://localhost:5173//api/auth/signup" `
+  -ContentType "application/json" `
+  -Body $signupBody
+
+$signupResponse
+# In your project folder (NOT C:\WINDOWS\System32)
+cd C:\Users\Aditya Maran\OneDrive\Desktop\i400\full_stack
+npm run dev
+
+C:\Users\Aditya Maran\OneDrive - Indiana University\i400\full_stack
+
+"C:\Users\Aditya Maran\OneDrive\Desktop\i400"
